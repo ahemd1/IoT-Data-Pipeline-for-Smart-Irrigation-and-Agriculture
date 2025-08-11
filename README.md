@@ -18,19 +18,7 @@ The system enables farmers to make **data-driven decisions** by integrating:
 
 ## 🏗️ Architecture
 
-
-```mermaid
-graph TD
-  A[IoT Sensors] -->|MQTT| B[AWS IoT Core]
-  B --> C[Amazon Kinesis Data Streams]
-  C --> D[AWS Lambda: Data Validation & Transformation]
-  D -->|Valid Data| E[Amazon S3 Data Lake]
-  D -->|Invalid Data| F[S3 Error Bucket + SNS Alerts]
-  E --> G[AWS Glue ETL Jobs]
-  G --> H[Amazon Redshift Data Warehouse]
-  H --> I[Power BI Dashboards]
-  D --> J[Amazon OpenSearch for Logs]
-```
+![Pipeline Architecture](Images/pipeline.drawio.svg)
 
 ---
 

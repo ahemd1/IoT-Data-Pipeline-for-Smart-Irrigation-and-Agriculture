@@ -18,7 +18,7 @@ The system enables farmers to make **data-driven decisions** by integrating:
 
 ## 🏗️ Architecture
 
-![Pipeline Architecture](Images/pipeline.drawio.svg)
+![Pipeline Architecture](Images/pipeline.drawio-4.svg)
 
 ---
 
